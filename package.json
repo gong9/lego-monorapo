@@ -8,7 +8,7 @@
     "changeset": "changeset",
     "release:version": "changeset version",
     "release": "pnpm -r build",
-    "publish": "changeset publish",
+    "publishChangeset": "changeset publish",
     "preinstall": "npx only-allow pnpm"
   },
   "author": "",
