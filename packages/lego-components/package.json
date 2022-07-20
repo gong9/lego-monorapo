@@ -2,7 +2,7 @@
   "name": "lego-components",
   "version": "0.0.1",
   "description": "乐高相关组件",
-  "private": false,
+  "private": true,
   "main": "index.js",
   "publishConfig": {
     "main": "lib/index.js"
