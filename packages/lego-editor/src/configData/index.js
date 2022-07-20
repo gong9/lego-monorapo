@@ -1,10 +1,10 @@
 
-import containerData from './container'
+import containerData from './container/index.json'
 
-import blockConfigData from './data/block'
-import ruleConfigData from './data/rule'
-import stepConfigData from './data/step'
-import taskConfigData from './data/task'
+import blockConfigData from './data/block.json'
+import ruleConfigData from './data/rule.json'
+import stepConfigData from './data/step.json'
+import taskConfigData from './data/task.json'
 
 export {
   containerData,
