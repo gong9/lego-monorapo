@@ -1,0 +1,65 @@
+ {
+  "canDelete": {
+    "component": "lego-switch",
+    "label": "是否默认放置",
+    "isBelongOption": true
+  },
+  "description": {
+    "component": "lego-input",
+    "label": "文本描述",
+    "props": {
+      "placeholder": "请输入文本描述"
+    },
+    "isBelongOption": true
+  },
+  "displayOrder": {
+    "component": "lego-input-number",
+    "label": "排列顺序",
+    "isBelongOption": true
+  },
+  "notRemoveButton": {
+    "component": "lego-switch",
+    "label": "是否展示移除",
+    "isBelongOption": true
+  },
+  "deleteLimit": {
+    "tooltip": "仅在当前画布的限制组件有效",
+    "component": "lego-select",
+    "label": "删除限制",
+    "componentOption": "all-chunk-data",
+    "isBelongOption": true
+  },
+  "relationPut": {
+    "tooltip": "仅在当前画布的限制组件有效",
+    "component": "lego-select",
+    "componentOption": "all-chunk-data",
+    "label": "联动放置",
+    "isBelongOption": true
+  },
+  "hide": {},
+  "isRemoveAttrConfig": {},
+  "isPrefix": {
+    "component": "lego-switch",
+    "label": "是否展示前缀",
+    "isBelongOption": true
+  },
+  "isSuffix": {
+    "component": "lego-switch",
+    "label": "是否展示后缀",
+    "isBelongOption": true
+  },
+  "relationOption": {
+    "component": "lego-input",
+    "label": "xxxxx",
+    "props": {
+     "placeholder": "请输入xxxxx"
+    },
+    "isBelongOption": true
+  },
+  "__other__": {
+    "tooltip": "一些特殊属性,会放进option中",
+    "component": "lego-jsEditor",
+    "label": "特殊属性",
+    "isBelongOption": true
+  }
+}

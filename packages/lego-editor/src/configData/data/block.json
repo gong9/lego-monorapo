@@ -1,0 +1,62 @@
+{
+  "relation": {
+    "component": "lego-select",
+    "label": "计算逻辑",
+    "componentOption": [
+      {
+        "label": "and",
+        "value": "and"
+      },
+      {
+        "label": "or",
+        "value": "or"
+      }
+    ],
+    "isBelongOption": true
+  },
+  "needCheck": {
+    "component": "lego-jsEditor",
+    "label": "校验逻辑",
+    "isBelongOption": true
+  },
+  "isCanvas": {
+    "component": "lego-switch",
+    "label": "是否画布",
+    "isBelongOption": false
+  },
+  "needSort": {
+    "component": "lego-switch",
+    "label": "孩子是否排序",
+    "isBelongOption": true
+  },
+  "disabledComChunk": {
+    "component": "lego-select",
+    "label": "当前画布不可选",
+    "componentOption": [
+      {
+        "label": "and",
+        "value": "and"
+      },
+      {
+        "label": "or",
+        "value": "or"
+      }
+    ],
+    "isBelongOption": true
+  },
+  "style": {
+    "component": "lego-jsEditor",
+    "label": "展示样式"
+  },
+  "minChildrenLength": {
+    "component": "lego-input-number",
+    "label": "孩子最少数量",
+    "isBelongOption": true
+  },
+  "__other__": {
+    "tooltip": "一些特殊属性,会放进option中",
+    "component": "lego-jsEditor",
+    "label": "特殊属性",
+    "isBelongOption": true
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "name": "lego-editor",
+  "version": "1.0.8",
+  "description": "乐高编辑器",
+  "main": "index.js",
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js"
+  },
+  "files": [
+    "lib",
+    "readme.md"
+  ],
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "monaco-editor": "0.31.1",
+    "vuedraggable": "2.24.3"
+  },
+  "devDependencies": {
+  }
+}

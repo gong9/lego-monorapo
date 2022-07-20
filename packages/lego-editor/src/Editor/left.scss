@@ -1,0 +1,25 @@
+.snapshot-container {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .snapshot {
+        box-sizing: border-box;
+        padding: 3px 5px;
+        width: 47%;
+        height: 45px;
+        border: 1px solid #ccc;
+        background-color: #f6f7ff;
+        border-radius: 4px;
+        margin: 3px 5px;
+        font-size: 10px;
+        cursor: move;
+    }
+}
+
+.snapshot-group-title {
+    box-sizing: border-box;
+    padding-left: 4px;
+    background-color: #fff;
+}
+

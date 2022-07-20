@@ -1,0 +1,11 @@
+ {
+  "formatter": {
+    "component": "lego-jsEditor",
+    "label": "sp提交预览"
+  },
+  "__other__": {
+    "tooltip": "一些特殊属性,会放进option中",
+    "component": "lego-jsEditor",
+    "label": "特殊属性"
+  }
+}

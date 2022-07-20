@@ -1,0 +1,47 @@
+.container-node {
+    box-sizing: border-box;
+    padding: 20px 0px 20px 0;
+    width: 100%;
+    min-height: 100px;
+    min-width: 200px;
+    position: relative;
+    cursor: move;
+
+    .container-node-outside {
+        position: relative;
+        padding: 20px 0px 20px 0;
+        border: 1px dashed #ccc;
+    }
+
+    .el-icon-delete {
+        cursor: pointer;
+        font-size: 16px;
+    }
+}
+
+.cover {
+    position: relative;
+
+    .cover-box {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 99;
+    }
+}
+
+.chunk-node {
+    cursor: move;
+    z-index: 199;
+
+    &:hover {
+        background-color: #f6f7ff;
+    }
+}
+
+.init-class {
+    height: 100%;
+    display: block;
+}

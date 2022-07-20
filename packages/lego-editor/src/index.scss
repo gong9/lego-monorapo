@@ -1,0 +1,35 @@
+.editor {
+    background-color: #fff;
+    .editor-top {
+        height: 50px;
+    }
+
+    .editor-main {
+        display: flex;
+        width: 100%;
+        height: 90vh;
+        min-height: 600px;
+
+        .left {
+            border: 1px solid royalblue;
+            flex: 2;
+            overflow: auto;
+        }
+
+        .center {
+            box-sizing: border-box;
+            padding: 5px 5px;
+            border-top: 1px solid royalblue;
+            border-bottom: 1px solid royalblue;
+            flex: 4;
+            overflow-y: auto;
+            overflow-x: hidden;
+        }
+
+        .right {
+            border: 1px solid royalblue;
+            flex: 2
+        }
+    }
+
+}

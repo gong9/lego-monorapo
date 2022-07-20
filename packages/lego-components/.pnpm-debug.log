@@ -1,0 +1,24 @@
+{
+  "0 debug pnpm:scope": {
+    "selected": 1,
+    "workspacePrefix": "/Users/gongzhen/code/lego-npm/lego-monorepo"
+  },
+  "1 info pnpm": {
+    "err": {
+      "name": "Error",
+      "message": "not found: buid",
+      "code": "ENOENT",
+      "stack": "Error: not found: buid\n    at getNotFoundError (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:21148:51)\n    at Function.whichSync [as sync] (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:21225:13)\n    at getCommandAbsolutePathSync (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:22903:44)\n    at default_1 (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:22912:32)\n    at /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:179918:39"
+    }
+  },
+  "2 error pnpm": {
+    "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+    "prefix": "/Users/gongzhen/code/lego-npm/lego-monorepo/packages/lego-components",
+    "err": {
+      "name": "pnpm",
+      "message": "not found: buid",
+      "code": "ERR_PNPM_RECURSIVE_EXEC_FIRST_FAIL",
+      "stack": "Error: not found: buid\n    at getNotFoundError (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:21148:51)\n    at Function.whichSync [as sync] (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:21225:13)\n    at getCommandAbsolutePathSync (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:22903:44)\n    at default_1 (/usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:22912:32)\n    at /usr/local/lib/node_modules/pnpm/dist/pnpm.cjs:179918:39"
+    }
+  }
+}

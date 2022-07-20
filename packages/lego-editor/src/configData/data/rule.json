@@ -1,0 +1,46 @@
+{
+  "canDelete": {
+    "component": "lego-switch",
+    "label": "是否默认放置"
+  },
+  "relation": {
+    "component": "lego-select",
+    "label": "计算逻辑",
+    "componentOption": [
+      {
+        "label": "and",
+        "value": "and"
+      },
+      {
+        "label": "or",
+        "value": "or"
+      }
+    ]
+  },
+  "notRemoveButton": {
+    "component": "lego-switch",
+    "label": "是否展示删除按钮"
+  },
+  "displayOrder": {
+    "component": "lego-input-number",
+    "label": "排列顺序"
+  },
+  "description": {
+    "component": "lego-input",
+    "label": "文本描述"
+  },
+  "style": {
+    "component": "lego-jsEditor",
+    "label": "展示样式"
+  },
+  "ruleConfig": {
+    "component": "lego-jsEditor",
+    "label": "哈勃属性配置"
+  },
+  "__other__": {
+    "tooltip": "一些特殊属性,会放进option中",
+    "component": "lego-jsEditor",
+    "label": "特殊属性"
+  }
+}
+

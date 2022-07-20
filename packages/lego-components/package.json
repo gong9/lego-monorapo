@@ -1,0 +1,24 @@
+{
+  "name": "lego-components",
+  "version": "5.0.1",
+  "description": "乐高相关组件",
+  "private": false,
+  "main": "index.js",
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "files": [
+    "lib"
+  ],
+  "keywords": [
+    "lego",
+    "lowcode"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {}
+}

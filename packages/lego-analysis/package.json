@@ -1,0 +1,26 @@
+{
+  "name": "lego-analysis",
+  "version": "2.0.3",
+  "description": "乐高解析器",
+  "main": "index.js",
+  "publishConfig": {
+    "main": "lib/index.js"
+  },
+  "scripts": {
+    "build": "rollup --config rollup.config.js",
+    "preinstall": "npx only-allow pnpm"
+  },
+  "files": [
+    "lib",
+    "readme.md"
+  ],
+  "keywords": [
+    "lego",
+    "lowcode"
+  ],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "async-validator": "^4.2.5"
+  }
+}
