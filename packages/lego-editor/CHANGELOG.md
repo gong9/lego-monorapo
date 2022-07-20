@@ -1,5 +1,11 @@
 # lego-editor
 
+## 0.0.2
+
+### Patch Changes
+
+- feat: 调试 action
+
 ## 1.0.8
 
 ### Patch Changes

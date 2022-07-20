@@ -7,7 +7,7 @@
     "dev": "cd ./packages/lego-example && pnpm dev",
     "changeset": "changeset",
     "release:version": "changeset version",
-    "release": "pnpm -r build && changeset publish",
+    "release": "pnpm -r build",
     "publish": "changeset publish",
     "preinstall": "npx only-allow pnpm"
   },

@@ -1,6 +1,6 @@
 {
   "name": "lego-editor",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "乐高编辑器",
   "main": "index.js",
   "publishConfig": {
@@ -20,6 +20,5 @@
     "monaco-editor": "0.31.1",
     "vuedraggable": "2.24.3"
   },
-  "devDependencies": {
-  }
+  "devDependencies": {}
 }
