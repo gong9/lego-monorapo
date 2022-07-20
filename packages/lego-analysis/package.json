@@ -1,6 +1,6 @@
 {
   "name": "lego-analysis",
-  "version": "2.0.3",
+  "version": "0.0.1",
   "description": "乐高解析器",
   "main": "index.js",
   "publishConfig": {
