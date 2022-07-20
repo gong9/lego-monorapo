@@ -42,8 +42,6 @@ export default {
           return <legoRadio schema={schema} />
         case 'el-input-number':
           return handleInjectPorpsAndEvents(<el-input-number/>, options)
-        default:
-          return handleInjectPorpsAndEvents(<component/>, options)
       }
     }
   },
