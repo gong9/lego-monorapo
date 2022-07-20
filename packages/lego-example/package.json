@@ -9,7 +9,6 @@
   "dependencies": {
     "@babel/core": "^7.18.5",
     "element-ui": "^2.15.9",
-    "lego-analysis": "workspace:^0.0.1",
     "lego-components": "workspace:^0.0.1",
     "lego-editor": "workspace:^0.0.3",
     "vue": "2.6.10"
