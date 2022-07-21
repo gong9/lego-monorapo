@@ -1,6 +1,6 @@
 {
   "name": "lego-components-vue",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "乐高相关组件",
   "private": false,
   "main": "index.js",
