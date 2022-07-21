@@ -5,31 +5,32 @@ on:
      branches: [ main ]
 
 jobs:
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7
-      - run: pnpm install --no-frozen-lockfile 
-      - run: pnpm -r build
+  steps
+    build:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+        - uses: pnpm/action-setup@v2.2.2
+          with:
+            version: 7
+        - run: pnpm install --no-frozen-lockfile 
+        - run: pnpm -r build
 
-  publish-npm:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v3
-      - uses: actions/setup-node@v3
-        with:
-          node-version: 16
-          registry-url: https://registry.npmjs.org/
-      - uses: pnpm/action-setup@v2.2.2
-        with:
-          version: 7
-      - run: pnpm install --no-frozen-lockfile 
-      - run: pnpm publishChangeset
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.LEGO}}
+    publish-npm:
+      runs-on: ubuntu-latest
+      steps:
+        - uses: actions/checkout@v3
+        - uses: actions/setup-node@v3
+          with:
+            node-version: 16
+            registry-url: https://registry.npmjs.org/
+        - uses: pnpm/action-setup@v2.2.2
+          with:
+            version: 7
+        - run: pnpm install --no-frozen-lockfile 
+        - run: pnpm publishChangeset
+          env:
+            NODE_AUTH_TOKEN: ${{secrets.LEGO}}
