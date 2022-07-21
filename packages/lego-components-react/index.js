@@ -1,7 +1,7 @@
 import './style.scss'
-import Button from './src/Components/Button/index'
-import Dialog from './src/Components/Dialog/index'
-import Image from './src/Components/Image/index'
+import Button from './src/components/Button/index'
+import Dialog from './src/components/Dialog/index'
+import Image from './src/components/Image/index'
 import getSchma from './src/util/getSchema'
 
 // 组合组件物料信息
