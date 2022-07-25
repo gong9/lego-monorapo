@@ -1,8 +1,8 @@
 {
   "name": "lego-components-react",
-  "version": "0.0.4",
-  "description": "",
-  "main": "index.js",
+  "version": "0.0.5",
+  "description": "小宫同学",
+  "main": "lib/index.js",
   "publishConfig": {
     "main": "lib/index.js"
   },

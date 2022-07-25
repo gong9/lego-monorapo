@@ -5,6 +5,7 @@
   "scripts": {
     "build": "pnpm -r build",
     "dev": "cd ./packages/lego-example && pnpm dev",
+    "dev-react": "cd ./packages/lego-show-react && pnpm start",
     "changeset": "changeset",
     "release:version": "changeset version",
     "release": "pnpm -r build",

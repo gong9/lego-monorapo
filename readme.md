@@ -4,6 +4,7 @@
 - lego-components-react 2c
 - lego-g-utils 工具方法库
 - lego-example 开发调试项目【非包】
+- lego-show-react 原super-h5-plus展示项目【非包】
 
 ## 开发
 > 请尽量使用pnpm
