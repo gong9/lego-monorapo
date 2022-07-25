@@ -1,0 +1,15 @@
+{
+    "name": "noticeBar",
+    "compId": "NoticeBar",
+    "description": "公告栏",
+    "pic": "https://img11.360buyimg.com/ddimg/jfs/t1/88856/35/18313/1750299/6156d725E08d3adea/c3a6bd820350230c.png",
+    "config": [{
+      "name": "noticeBarTitle",
+      "label": "请输入公告栏标题",
+      "type": "string",
+      "format": "text"
+    }],
+    "defaultConfig": {
+      "noticeBarTitle": "请输入公告栏标题"
+    }
+  }
