@@ -1,5 +1,11 @@
 # lego-components-react
 
+## 0.0.6
+
+### Patch Changes
+
+- feat: 添加两个组件
+
 ## 0.0.5
 
 ### Patch Changes

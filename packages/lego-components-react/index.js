@@ -4,14 +4,17 @@ import Button from './src/components/Button/index'
 import Dialog from './src/components/Dialog/index'
 import Image from './src/components/Image/index'
 import NoticeBar from './src/components/NoticeBar/index'
-import getSchma from './src/util/getSchema'
+import SuperSwiper from './src/components/Swiper/index'
+import SuperTabs from './src/components/Tabs/index'
+import getSchema from './src/util/getSchema'
 
 // 组合组件物料信息
 const schameMap = [
-  getSchma(Button),
-  getSchma(Dialog),
-  getSchma(Image),
-  getSchma(NoticeBar)
+  getSchema(Button),
+  getSchema(Dialog),
+  getSchema(Image),
+  getSchema(NoticeBar),
+  getSchema(SuperTabs)
 ]
 
 export {
@@ -19,5 +22,7 @@ export {
   Button,
   Dialog,
   Image,
-  NoticeBar
+  NoticeBar,
+  SuperSwiper,
+  SuperTabs
 }
