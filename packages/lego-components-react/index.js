@@ -14,6 +14,7 @@ const schameMap = [
   getSchema(Dialog),
   getSchema(Image),
   getSchema(NoticeBar),
+  getSchema(SuperSwiper),
   getSchema(SuperTabs)
 ]
 
