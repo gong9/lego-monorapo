@@ -2,7 +2,7 @@ import html2canvas from 'html2canvas'
 
 /**
  * 将dom绘制成图片
- * @param {*} node dom节点
+ * @param {object} node dom节点
  * @returns img 类型 base 64
  */
 export const domToImg = async(node) => {
