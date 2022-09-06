@@ -1,8 +1,8 @@
 {
   "name": "lego-g-utils",
   "version": "0.0.4",
-  "description": "乐高方法库",
-  "main": "index.js",
+  "description": "方法库",
+  "main": "src/index.js",
   "publishConfig": {
     "main": "lib/index.js"
   },

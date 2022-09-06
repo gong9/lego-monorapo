@@ -11,6 +11,7 @@
     "element-ui": "^2.15.9",
     "lego-components-vue": "workspace:^0.0.2",
     "lego-editor": "workspace:^0.0.5",
+    "lego-vue-editor": "workspace:^0.0.1",
     "vue": "2.6.10"
   },
   "devDependencies": {

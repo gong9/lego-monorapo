@@ -20,6 +20,11 @@ class EventEmitter {
       if (this.cache[name]) this.cache[name](...args)
     };
 
+    /**
+     * 取消订阅
+     * @param {string} name
+     * @param {function} fn
+     */
     off = (name, fn) => {
       const tasks = this.cache[name]
       if (tasks) {

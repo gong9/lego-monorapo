@@ -1,5 +1,4 @@
 import babel from 'rollup-plugin-babel'
-import alias from '@rollup/plugin-alias'
 import scss from 'rollup-plugin-scss'
 import commonjs from 'rollup-plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
@@ -10,12 +9,11 @@ import {
 } from 'rollup-plugin-terser'
 
 export default {
-  input: './index.js',
+  input: './src/index.js',
   output: {
     file: './lib/index.js',
     format: 'esm'
   },
-  external: ['lodash', 'vuedraggable'],
   plugins: [
     json(),
     babel(),
@@ -25,9 +23,6 @@ export default {
     postcss({
       extract: true,
       minimize: false
-    }),
-    alias({
-      resolve: ['.js', '.jsx', '.ts', '.tsx']
     })
   ]
 }

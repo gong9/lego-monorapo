@@ -1,2 +1,7 @@
-const add = (a, b) => a + b
-export default add
+import event from './utils/event'
+import debounce from './utils/debounce'
+
+export {
+  event,
+  debounce
+}
