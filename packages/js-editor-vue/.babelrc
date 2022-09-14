@@ -11,7 +11,8 @@
           "useESModules": false,
           "corejs": 2
         }
-      ]
+      ],
+      "@vue/babel-plugin-transform-vue-jsx"
     ]
   }
   

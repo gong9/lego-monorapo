@@ -1,3 +1,8 @@
+import Test from './src/index.vue'
+import Test02 from './src/test'
 import './index.scss'
 
-console.log(112332221)
+export default {
+  Test,
+  Test02
+}

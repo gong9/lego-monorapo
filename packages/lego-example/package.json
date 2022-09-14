@@ -9,6 +9,7 @@
   "dependencies": {
     "@babel/core": "^7.18.5",
     "element-ui": "^2.15.9",
+    "js-editor-vue": "workspace:^1.0.0",
     "lego-editor": "workspace:^0.0.5",
     "vue": "2.6.10"
   },

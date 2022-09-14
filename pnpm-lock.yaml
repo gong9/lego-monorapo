@@ -77,6 +77,7 @@ importers:
       '@babel/preset-env': ^7.18.2
       '@babel/runtime': ^7.19.0
       '@babel/runtime-corejs2': ^7.19.0
+      '@vue/babel-plugin-transform-vue-jsx': ^1.4.0
       babel-loader: ^8.2.5
       clean-webpack-plugin: ^4.0.0
       copy-webpack-plugin: ^11.0.0
@@ -84,6 +85,8 @@ importers:
       css-loader: ^6.7.1
       node-sass: ^7.0.1
       sass-loader: ^13.0.2
+      vue-loader: ^15.7.0
+      vue-template-compiler: 2.6.10
       webpack: ^5.74.0
       webpack-cli: ^4.10.0
     devDependencies:
@@ -93,6 +96,7 @@ importers:
       '@babel/preset-env': 7.18.2_@babel+core@7.18.5
       '@babel/runtime': 7.19.0
       '@babel/runtime-corejs2': 7.19.0
+      '@vue/babel-plugin-transform-vue-jsx': 1.4.0_@babel+core@7.18.5
       babel-loader: 8.2.5_pbd7ihwcxmowovvnltrrag7bjm
       clean-webpack-plugin: 4.0.0_webpack@5.74.0
       copy-webpack-plugin: 11.0.0_webpack@5.74.0
@@ -100,6 +104,8 @@ importers:
       css-loader: 6.7.1_webpack@5.74.0
       node-sass: 7.0.1
       sass-loader: 13.0.2_md2tbmlws6v2567ksxonc6tawa
+      vue-loader: 15.10.0_3en2h3qu7adc7a6owaj4i4dzm4
+      vue-template-compiler: 2.6.10
       webpack: 5.74.0_webpack-cli@4.10.0
       webpack-cli: 4.10.0_webpack@5.74.0
 
@@ -121,6 +127,7 @@ importers:
     specifiers:
       '@babel/core': ^7.18.5
       element-ui: ^2.15.9
+      js-editor-vue: workspace:^1.0.0
       lego-editor: workspace:^0.0.5
       vite: ^2.9.5
       vite-plugin-vue2: ^1.9.2
@@ -129,6 +136,7 @@ importers:
     dependencies:
       '@babel/core': 7.18.5
       element-ui: 2.15.9_vue@2.6.10
+      js-editor-vue: link:../js-editor-vue
       lego-editor: link:../lego-editor
       vue: 2.6.10
     devDependencies:
@@ -2063,6 +2071,10 @@ packages:
     resolution: {integrity: sha1-MWJKelBfsU2h1YAjclpMXycOaoE=}
     dev: true
 
+  /@vue/babel-helper-vue-jsx-merge-props/1.4.0:
+    resolution: {integrity: sha512-JkqXfCkUDp4PIlFdDQ0TdXoIejMtTHP67/pvxlgeY+u5k3LEdKuWZ3LK6xkxo52uDoABIVyRwqVkfLQJhk7VBA==}
+    dev: true
+
   /@vue/babel-plugin-transform-vue-jsx/1.2.1_@babel+core@7.18.5:
     resolution: {integrity: sha1-ZGBGxlLC8CQnJ/NFGdkXsGQEHtc=}
     peerDependencies:
@@ -2072,6 +2084,20 @@ packages:
       '@babel/helper-module-imports': 7.16.7
       '@babel/plugin-syntax-jsx': 7.17.12_@babel+core@7.18.5
       '@vue/babel-helper-vue-jsx-merge-props': 1.2.1
+      html-tags: 2.0.0
+      lodash.kebabcase: 4.1.1
+      svg-tags: 1.0.0
+    dev: true
+
+  /@vue/babel-plugin-transform-vue-jsx/1.4.0_@babel+core@7.18.5:
+    resolution: {integrity: sha512-Fmastxw4MMx0vlgLS4XBX0XiBbUFzoMGeVXuMV08wyOfXdikAFqBTuYPR0tlk+XskL19EzHc39SgjrPGY23JnA==}
+    peerDependencies:
+      '@babel/core': ^7.0.0-0
+    dependencies:
+      '@babel/core': 7.18.5
+      '@babel/helper-module-imports': 7.18.6
+      '@babel/plugin-syntax-jsx': 7.18.6_@babel+core@7.18.5
+      '@vue/babel-helper-vue-jsx-merge-props': 1.4.0
       html-tags: 2.0.0
       lodash.kebabcase: 4.1.1
       svg-tags: 1.0.0
@@ -3637,7 +3663,7 @@ packages:
     dev: true
 
   /de-indent/1.0.2:
-    resolution: {integrity: sha1-sgOOhG3DO6pXlhKNCAS0VbjB4h0=}
+    resolution: {integrity: sha512-e/1zu3xH5MQryN2zdVaF0OrdNLUbvWxzMbi+iNA6Bky7l1RoP8a2fIbRocyHclXt/arDrrR6lL3TqFD9pMQTsg==}
     dev: true
 
   /debug/2.6.9:
@@ -4853,11 +4879,11 @@ packages:
     dev: true
 
   /hash-sum/2.0.0:
-    resolution: {integrity: sha1-gdAbtd6OpKIUrV1urRtSNGCwtFo=}
+    resolution: {integrity: sha512-WdZTbAByD+pHfl/g9QSsBIIwy8IT+EsPiKDs0KNX+zSHhdDLFKdZu0BQHljvO+0QI/BasbMSUa8wYNCZTvhslg==}
     dev: true
 
   /he/1.2.0:
-    resolution: {integrity: sha1-hK5l+n6vsWX922FWauFLrwVmTw8=}
+    resolution: {integrity: sha512-F/1DnUGPopORZi0ni+CvrCgHQ5FyEAHRLSApuYWMmrbSwoN2Mn/7k+Gl38gJnR7yyDZk6WLXwiGod1JOWNDKGw==}
     hasBin: true
     dev: true
 
@@ -4873,7 +4899,7 @@ packages:
     dev: true
 
   /html-tags/2.0.0:
-    resolution: {integrity: sha1-ELMKOGCF9Dzt41PMj6fLDe7qZos=}
+    resolution: {integrity: sha512-+Il6N8cCo2wB/Vd3gqy/8TZhTD3QvcVeQLCnZiGkGCH3JP28IgGAY41giccp2W4R3jfyJPAP318FQTa1yU7K7g==}
     engines: {node: '>=4'}
     dev: true
 
@@ -5324,6 +5350,13 @@ packages:
     resolution: {integrity: sha512-ZClg6AaYvamvYEE82d3Iyd3vSSIjQ+odgjaTzRuO3s7toCdFKczob2i0zCh7JE8kWn17yvAWhUVxvqGwUalsRA==}
     dev: true
 
+  /json5/1.0.1:
+    resolution: {integrity: sha512-aKS4WQjPenRxiQsC93MNfjx+nbF4PAdYzmd/1JIj8HYzqfbu86beTuNgXDzPknWk0n0uARlyewZo4s++ES36Ow==}
+    hasBin: true
+    dependencies:
+      minimist: 1.2.6
+    dev: true
+
   /json5/2.2.1:
     resolution: {integrity: sha512-1hqLFMSrGHRHxav9q9gNjJ5EXznIxGVO09xQRrwplcS8qs28pZ8s8hupZAmqDwZUmVZ2Qb2jnyPOWcDH8m8dlA==}
     engines: {node: '>=6'}
@@ -5410,6 +5443,15 @@ packages:
     engines: {node: '>=6.11.5'}
     dev: true
 
+  /loader-utils/1.4.0:
+    resolution: {integrity: sha512-qH0WSMBtn/oHuwjy/NucEgbx5dbxxnxup9s4PVXJUDHZBQY+s0NWA9rJf53RBnQZxfch7euUui7hpoAPvALZdA==}
+    engines: {node: '>=4.0.0'}
+    dependencies:
+      big.js: 5.2.2
+      emojis-list: 3.0.0
+      json5: 1.0.1
+    dev: true
+
   /loader-utils/2.0.2:
     resolution: {integrity: sha512-TM57VeHptv569d/GKh6TAYdzKblwDNiumOdkFnejjD0XwTH87K90w3O7AiJRqdQoXygvi1VQTJTLGhJl7WqA7A==}
     engines: {node: '>=8.9.0'}
@@ -5455,7 +5497,7 @@ packages:
     dev: true
 
   /lodash.kebabcase/4.1.1:
-    resolution: {integrity: sha1-hImxyw0p/4gZXM7KRI/21swpXDY=}
+    resolution: {integrity: sha512-N8XRTIMMqqDgSy4VLKPnJ/+hpGZN+PHQiJnSenYqPaVV/NCqEogTnAdZLQiGKhxX+JCs8waWq2t1XHWKOmlY8g==}
     dev: true
 
   /lodash.memoize/4.1.2:
@@ -7471,7 +7513,7 @@ packages:
     dev: true
 
   /svg-tags/1.0.0:
-    resolution: {integrity: sha1-WPcc7jvVGbWdSyqEO2x95krAR2Q=}
+    resolution: {integrity: sha512-ovssysQTa+luh7A5Weu3Rta6FJlFBBbInjOh722LIt6klpU2/HtdUbszju/G4devcvk8PGt7FCLv5wftu3THUA==}
     dev: true
 
   /svgo/2.8.0:
@@ -7892,8 +7934,99 @@ packages:
       - supports-color
     dev: true
 
+  /vue-hot-reload-api/2.3.4:
+    resolution: {integrity: sha512-BXq3jwIagosjgNVae6tkHzzIk6a8MHFtzAdwhnV5VlvPTFxDCvIttgSiHWjdGoTJvXtmRu5HacExfdarRcFhog==}
+    dev: true
+
+  /vue-loader/15.10.0_3en2h3qu7adc7a6owaj4i4dzm4:
+    resolution: {integrity: sha512-VU6tuO8eKajrFeBzMssFUP9SvakEeeSi1BxdTH5o3+1yUyrldp8IERkSdXlMI2t4kxF2sqYUDsQY+WJBxzBmZg==}
+    peerDependencies:
+      '@vue/compiler-sfc': ^3.0.8
+      cache-loader: '*'
+      css-loader: '*'
+      vue-template-compiler: '*'
+      webpack: ^3.0.0 || ^4.1.0 || ^5.0.0-0
+    peerDependenciesMeta:
+      '@vue/compiler-sfc':
+        optional: true
+      cache-loader:
+        optional: true
+      vue-template-compiler:
+        optional: true
+    dependencies:
+      '@vue/component-compiler-utils': 3.3.0
+      css-loader: 6.7.1_webpack@5.74.0
+      hash-sum: 1.0.2
+      loader-utils: 1.4.0
+      vue-hot-reload-api: 2.3.4
+      vue-style-loader: 4.1.3
+      vue-template-compiler: 2.6.10
+      webpack: 5.74.0_webpack-cli@4.10.0
+    transitivePeerDependencies:
+      - arc-templates
+      - atpl
+      - babel-core
+      - bracket-template
+      - coffee-script
+      - dot
+      - dust
+      - dustjs-helpers
+      - dustjs-linkedin
+      - eco
+      - ect
+      - ejs
+      - haml-coffee
+      - hamlet
+      - hamljs
+      - handlebars
+      - hogan.js
+      - htmling
+      - jade
+      - jazz
+      - jqtpl
+      - just
+      - liquid-node
+      - liquor
+      - lodash
+      - marko
+      - mote
+      - mustache
+      - nunjucks
+      - plates
+      - pug
+      - qejs
+      - ractive
+      - razor-tmpl
+      - react
+      - react-dom
+      - slm
+      - squirrelly
+      - swig
+      - swig-templates
+      - teacup
+      - templayed
+      - then-jade
+      - then-pug
+      - tinyliquid
+      - toffee
+      - twig
+      - twing
+      - underscore
+      - vash
+      - velocityjs
+      - walrus
+      - whiskers
+    dev: true
+
+  /vue-style-loader/4.1.3:
+    resolution: {integrity: sha512-sFuh0xfbtpRlKfm39ss/ikqs9AbKCoXZBpHeVZ8Tx650o0k0q/YCM7FRvigtxpACezfq6af+a7JeqVTWvncqDg==}
+    dependencies:
+      hash-sum: 1.0.2
+      loader-utils: 1.4.0
+    dev: true
+
   /vue-template-compiler/2.6.10:
-    resolution: {integrity: sha1-MjtPNJXwT6o1AzN6gvXWUHeZycw=}
+    resolution: {integrity: sha512-jVZkw4/I/HT5ZMvRnhv78okGusqe0+qH2A0Em0Cp8aq78+NK9TII263CDVz2QXZsIT+yyV/gZc/j/vlwa+Epyg==}
     dependencies:
       de-indent: 1.0.2
       he: 1.2.0
