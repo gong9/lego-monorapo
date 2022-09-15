@@ -7,7 +7,8 @@
     "main": "lib/index.js"
   },
   "scripts": {
-    "build": "rollup --config rollup.config.js"
+    "build": "rollup --config rollup.config.js",
+    "docs": "jsdoc -c jsdoc.json"
   },
   "files": [
     "lib",
@@ -16,6 +17,8 @@
   "keywords": [],
   "author": "小宫同学",
   "license": "ISC",
-  "dependencies": {},
-  "devDependencies": {}
+  "devDependencies": {
+    "jsdoc": "^3.6.11",
+    "minami": "^1.2.3"
+  }
 }
