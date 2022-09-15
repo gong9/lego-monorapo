@@ -1,8 +1,7 @@
 # lego
 - lego-editor 2b lowcode 编辑器
-- lego-components-vue 2b 
-- lego-components-react 2c
-- lego-g-utils 工具方法库
+- lego-components-react 2c 组件库 h5编辑器使用
+- gz-utils 工具方法库
 - lego-example 开发调试项目【非包】
 - lego-show-react 原super-h5-plus展示项目【非包】
 
