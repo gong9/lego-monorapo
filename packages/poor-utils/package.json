@@ -1,6 +1,6 @@
 {
-  "name": "gz-utils",
-  "version": "0.0.2",
+  "name": "poor-utils",
+  "version": "0.0.1",
   "description": "方法库",
   "main": "src/index.js",
   "publishConfig": {
