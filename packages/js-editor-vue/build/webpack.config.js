@@ -2,6 +2,7 @@ const path = require('path')
 const { CleanWebpackPlugin } = require('clean-webpack-plugin')
 const MiniCssExtractPlugin = require('mini-css-extract-plugin')
 const { VueLoaderPlugin } = require('vue-loader')
+const MonacoWebpackPlugin = require('monaco-editor-webpack-plugin')
 
 module.exports = {
   mode: 'development',
@@ -26,6 +27,10 @@ module.exports = {
         use: ['vue-loader']
       },
       {
+        test: /\.css$/,
+        use: [MiniCssExtractPlugin.loader, 'css-loader']
+      },
+      {
         test: /\.scss$/,
         use: [MiniCssExtractPlugin.loader, 'css-loader', 'sass-loader']
       }
@@ -34,10 +39,15 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new MiniCssExtractPlugin({
-      filename: 'css/[name].[hash:8].css',
+      filename: 'css/index.css',
       chunkFilename: '[id].css'
     }),
-    new VueLoaderPlugin()
+    new VueLoaderPlugin(),
+    new MonacoWebpackPlugin({
+      languages: ['javascript', 'css', 'html', 'typescript'],
+      features: [],
+      publicPath: path.resolve(__dirname, '../lib')
+    })
   ]
 }
 

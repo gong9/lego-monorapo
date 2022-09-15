@@ -1,8 +1,4 @@
-import Test from './src/index.vue'
-import Test02 from './src/test'
+import Editor from './src/index'
 import './index.scss'
 
-export default {
-  Test,
-  Test02
-}
+export default Editor

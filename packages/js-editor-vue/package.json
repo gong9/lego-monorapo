@@ -26,11 +26,15 @@
     "copy-webpack-plugin": "^11.0.0",
     "core-js": "2",
     "css-loader": "^6.7.1",
+    "monaco-editor-webpack-plugin": "^4.2.0",
     "node-sass": "^7.0.1",
     "sass-loader": "^13.0.2",
     "vue-loader": "^15.7.0",
     "vue-template-compiler": "2.6.10",
     "webpack": "^5.74.0",
     "webpack-cli": "^4.10.0"
+  },
+  "dependencies": {
+    "monaco-editor": "0.28.1"
   }
 }
