@@ -43,11 +43,7 @@ module.exports = {
       chunkFilename: '[id].css'
     }),
     new VueLoaderPlugin(),
-    new MonacoWebpackPlugin({
-      languages: ['javascript', 'css', 'html', 'typescript'],
-      features: [],
-      publicPath: path.resolve(__dirname, '../lib')
-    })
+    new MonacoWebpackPlugin()
   ]
 }
 

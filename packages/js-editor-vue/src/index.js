@@ -8,16 +8,17 @@ export default {
     return {
       defaultOpts: {
         value: '',
-        theme: 'vs-dark',
+        theme: 'vs',
         roundedSelection: true,
         autoIndent: true,
-        language: 'javascript'
+        language: 'json'
       },
       monacoEditor: {}
     }
   },
   mounted() {
     this.initEditor()
+    console.log(monaco.languages.getLanguages())
   },
   methods: {
     /**
