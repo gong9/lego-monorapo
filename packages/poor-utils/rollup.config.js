@@ -3,16 +3,19 @@ import scss from 'rollup-plugin-scss'
 import commonjs from 'rollup-plugin-commonjs'
 import postcss from 'rollup-plugin-postcss'
 import json from '@rollup/plugin-json'
+import typescript from 'rollup-plugin-typescript'
+import sourceMaps from 'rollup-plugin-sourcemaps'
 
 import {
   terser
 } from 'rollup-plugin-terser'
 
 export default {
-  input: './src/index.js',
+  input: './src/index.ts',
   output: {
     file: './lib/index.js',
-    format: 'esm'
+    format: 'esm',
+    sourcemap: true
   },
   plugins: [
     json(),
@@ -23,6 +26,11 @@ export default {
     postcss({
       extract: true,
       minimize: false
-    })
+    }),
+    typescript({
+      exclude: 'node_modules/**',
+      typescript: require('typescript')
+    }),
+    sourceMaps()
   ]
 }

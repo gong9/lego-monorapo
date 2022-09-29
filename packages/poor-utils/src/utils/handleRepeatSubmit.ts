@@ -2,7 +2,7 @@
  * 处理表单重复提交
  * @param {function} oldHandleFn 处理函数
  */
-const handleRepeatSubmit = (oldHandleFn) => {
+const handleRepeatSubmit = (oldHandleFn:Function) => {
   let falg = true
 
   return async function(...arg) {

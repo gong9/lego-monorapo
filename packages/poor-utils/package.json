@@ -2,7 +2,7 @@
   "name": "poor-utils",
   "version": "0.0.1",
   "description": "方法库",
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "publishConfig": {
     "main": "lib/index.js"
   },
@@ -19,6 +19,10 @@
   "license": "ISC",
   "devDependencies": {
     "jsdoc": "^3.6.11",
-    "minami": "^1.2.3"
+    "minami": "^1.2.3",
+    "rollup-plugin-sourcemaps": "^0.6.3",
+    "rollup-plugin-typescript": "^1.0.1",
+    "tslib": "^2.4.0",
+    "typescript": "^4.8.4"
   }
 }

@@ -4,8 +4,8 @@
  * @param {number} wait
  * @return a handle after function
  */
-const debounce = (fn, wait = 200) => {
-  let timeout = null
+const debounce = (fn: Function, wait: number = 200) => {
+  let timeout: ReturnType<typeof setTimeout>
   return (...args) => {
     if (timeout) clearTimeout(timeout)
     timeout = setTimeout(() => {

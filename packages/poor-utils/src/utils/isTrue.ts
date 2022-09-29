@@ -4,7 +4,7 @@
  * TODO 待考虑其他情况
  * @param {any} value
  */
-const isTrue = (value) => {
+const isTrue = (value: unknown) => {
   switch (Object.prototype.toString.call(value)) {
     case '[object Boolean]':
       return value

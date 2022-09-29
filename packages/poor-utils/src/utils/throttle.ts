@@ -4,9 +4,9 @@
  * @param {number} delay 截流时间
  * @returns a handle after function
  */
-const throttle = (func, delay = 20) => {
+const throttle = (func: Function, delay: number = 20) => {
   let prev = 0
-  return function(...arg) {
+  return function (...arg) {
     const now = Date.now()
     if (now - prev > delay) {
       func.apply(this, arg)
