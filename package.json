@@ -4,6 +4,7 @@
   "description": "生态包建设",
   "scripts": {
     "build": "pnpm -r build",
+    "docs": "pnpm -r docs",
     "dev": "cd ./packages/lego-example && pnpm dev",
     "dev-react": "cd ./packages/lego-show-react && pnpm start",
     "changeset": "changeset",
